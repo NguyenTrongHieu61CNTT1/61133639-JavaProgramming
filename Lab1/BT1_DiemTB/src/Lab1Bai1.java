@@ -9,7 +9,7 @@ public class Lab1Bai1 {
 		String hoTen = scanner.nextLine();
 		System.out.print("Điểm trung bình: ");
 		double diemTB = scanner.nextDouble();
-		System.out.printf("%s %f điểm", hoTen, diemTB);
+		System.out.printf("%s %.1f điểm", hoTen, diemTB);
 	}
 
 }
