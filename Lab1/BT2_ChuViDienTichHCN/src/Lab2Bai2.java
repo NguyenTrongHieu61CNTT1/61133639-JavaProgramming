@@ -12,9 +12,9 @@ public class Lab2Bai2 {
 		double cv = (a1+a2)*2;
 		double s = a1*a2;
 		double canh = Math.min(a1, a2);
-		System.out.printf("Chu vi HCN = %f", cv);
-		System.out.printf("Diện tích HCN = %f", s);
-		System.out.printf("Cạnh nhỏ nhất của HCN = %f", canh);
+		System.out.printf("Chu vi HCN = %.1f", cv);
+		System.out.printf("\tDiện tích HCN = %.1f", s);
+		System.out.printf("\tCạnh nhỏ nhất của HCN = %.1f", canh);
 	}
 
 }
