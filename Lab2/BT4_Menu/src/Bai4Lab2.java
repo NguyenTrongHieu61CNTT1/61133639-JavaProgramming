@@ -7,12 +7,13 @@ public class Bai4Lab2 {
 		Scanner scanner = new Scanner(System.in);
 		int chon = 0;
 		do {
-			System.out.print("+----------------------------+");
-			System.out.print("1. Giải phương trình bậc 1.");
-			System.out.print("2. Giải phương trình bậc 2.");
-			System.out.print("3. Tính tiền điện.");
-			System.out.print("4. Exit.");
-			System.out.print("+----------------------------+");
+			System.out.println("+----------------------------+");
+			System.out.println("1. Giải phương trình bậc 1.");
+			System.out.println("2. Giải phương trình bậc 2.");
+			System.out.println("3. Tính tiền điện.");
+			System.out.println("4. Exit.");
+			System.out.println("+----------------------------+");
+			System.out.println("Con số gì đây, số gì đây: ");
 			chon = scanner.nextInt();
 			
 			switch (chon) {
@@ -23,9 +24,9 @@ public class Bai4Lab2 {
 				double b = scanner.nextDouble();
 				if(a==0) {
 					if(b==0)
-						System.out.print("PT có vô số nghiệm!");
+						System.out.println("PT có vô số nghiệm!");
 					else
-						System.out.print("PT có vô nghiệm!");
+						System.out.println("PT có vô nghiệm!");
 				}
 				else {
 					double x = -b/a;
