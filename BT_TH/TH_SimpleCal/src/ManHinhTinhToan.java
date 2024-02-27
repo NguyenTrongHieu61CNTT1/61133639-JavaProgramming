@@ -65,6 +65,7 @@ public class ManHinhTinhToan extends JFrame {
 		btnNhan.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//Gọi hàm xử lý phép nhân
+				hamNhan();
 			}
 		});
 		btnNhan.setFont(new Font("Tahoma", Font.PLAIN, 23));
@@ -86,6 +87,7 @@ public class ManHinhTinhToan extends JFrame {
 		btnChia.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//Gọi hàm xử lý phép chia
+				hamChia();
 			}
 		});
 		btnChia.setFont(new Font("Tahoma", Font.PLAIN, 23));
@@ -135,5 +137,37 @@ public class ManHinhTinhToan extends JFrame {
 				
 		//Hiển thị:
 		txtKQ.setText(String.valueOf(tru));
+	}
+	
+	void hamNhan() {
+		//Lấy dữ liệu từ text box:
+		String str_soA = txtA.getText();
+		String str_soB = txtB.getText();
+						
+		//Chuyển dữ liệu sang double:
+		double soA = Double.parseDouble(str_soA);
+		double soB = Double.parseDouble(str_soB);
+						
+		//Thực hiện tính toán:
+		double nhan = soA * soB;
+						
+		//Hiển thị:
+		txtKQ.setText(String.valueOf(nhan));
+	}
+	
+	void hamChia() {
+		//Lấy dữ liệu từ text box:
+				String str_soA = txtA.getText();
+				String str_soB = txtB.getText();
+								
+				//Chuyển dữ liệu sang double:
+				double soA = Double.parseDouble(str_soA);
+				double soB = Double.parseDouble(str_soB);
+								
+				//Thực hiện tính toán:
+				double chia = soA / soB;		
+				
+				//Hiển thị:
+				txtKQ.setText(String.valueOf(chia));
 	}
 }
