@@ -1,5 +1,6 @@
 import java.awt.FlowLayout;
 import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
@@ -23,5 +24,18 @@ public class CTChinh {
 		f.add(btnB);
 		
 		f.show();
+	}
+	
+	//Tạo listener:
+	private static class ListenerA implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			JDialog dialog = new JDialog();
+			dialog.setTitle("Bạn đã bị Hack!!!");
+			dialog.setSize(200,100);
+			dialog.show();
+		}
+		
 	}
 }
