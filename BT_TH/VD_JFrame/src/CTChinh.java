@@ -12,9 +12,11 @@ public class CTChinh {
 		
 		//Tạo button:
 		JButton btnA = new JButton("Nút bên phải");
+		JButton btnB = new JButton("Nút bên trái");
 		
 		//Gắn lên form:
 		f.add(btnA);
+		f.add(btnB);
 		
 		f.show();
 	}
