@@ -1,3 +1,4 @@
+import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
@@ -9,6 +10,9 @@ public class CTChinh {
 		f.setTitle("VD JFrame");
 		f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		f.setSize(300, 200); //Kích thước
+		
+		//Tạo bố cục
+		f.setLayout(new FlowLayout());
 		
 		//Tạo button:
 		JButton btnA = new JButton("Nút bên phải");
