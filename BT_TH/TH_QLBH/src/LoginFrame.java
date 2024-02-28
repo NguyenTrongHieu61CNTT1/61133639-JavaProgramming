@@ -76,6 +76,10 @@ public class LoginFrame extends JFrame {
 			this.setVisible(false); //Ẩn form login
 		}
 		else {
+			//Xóa dữ liệu nhập:
+			txtUser.setText("");
+			txtPass.setText("");
+			
 			JOptionPane hopThoai = new JOptionPane();
 			hopThoai.showMessageDialog(this, "Đăng nhập thất bại");
 		}
