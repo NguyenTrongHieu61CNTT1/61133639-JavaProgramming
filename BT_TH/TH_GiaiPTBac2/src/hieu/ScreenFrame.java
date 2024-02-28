@@ -104,10 +104,12 @@ public class ScreenFrame extends JFrame {
 		if (delta > 0) {
             double nghiem1 = (-soB + Math.sqrt(delta)) / (2.0 * soA);
             double nghiem2 = (-soB - Math.sqrt(delta)) / (2.0 * soA);
+		} else if (delta == 0.0) {
+            double nghiem = -soB / (2.0 * soA);
 		}
 		
 		//Hiển thị:
-		txtKQ.setText(String.valueOf(nghiem1));
-		txtKQ.setText(String.valueOf(nghiem2));
+		//txtKQ.setText(String.valueOf(nghiem1));
+		//txtKQ.setText(String.valueOf(nghiem2));
 	}
 }
